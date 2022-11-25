@@ -23,6 +23,11 @@ module.exports = () => {
         title: 'JATE'
       }),
 
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
+
       new WebpackPwaManifest({
         name: 'JATE',
         short_name: 'JATE',
